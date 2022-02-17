@@ -1,0 +1,38 @@
+$bgstrips: #222224;
+
+.interesting {
+    background-color: $bgstrips;
+    padding-top: 103px;
+    padding-bottom: 103px;
+    .interesting__stocks{
+        display: flex;
+        color: $greytxt;
+        justify-content: space-between;
+        &.container{
+            @include container();
+            .interesting__stocks-item {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 330px;
+                justify-content: flex-end;
+                .interesting__stocks-icon {
+                    margin-bottom: 28px;
+                }
+                .interesting__stocks__title {
+                    font-family: Lato;
+                    color: #fff;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 19.96px;
+                    line-height: 24px;
+                    margin-bottom: 16px;
+                }
+                .interesting__stocks__title-sub-text {
+                    text-align: center;
+                    color: $greytxt;
+                }
+            }
+        }
+    }
+}

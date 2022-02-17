@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/icons-fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cart</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__wrap">
+        <div class="header__wrap__left">
+          <a href="./index.html">
+            <img
+              class="header__logo"
+              src="img/logo-icon.svg"
+              alt="logo"
+              width="44"
+              height="38"
+            />
+          </a>
+          <img
+            class="header__search"
+            src="img/loop-icon.svg"
+            alt="loop"
+            width="27"
+            height="28"
+          />
+        </div>
+        <div class="header__wrap__right">
+          <button class="header__btn" type="button">
+            <img
+              src="img/burger-icon.svg"
+              alt="burger-menu"
+              width="32"
+              height="23"
+            />
+          </button>
+          <a class="header__link" href="registration.html">
+            <img src="img/profile-icon.svg" alt="person" />
+          </a>
+          <a class="header__link" href="./cart.html">
+            <img src="img/basket-icon.svg" alt="basket" />
+          </a>
+
+          <!--                Navigation content                 -->
+
+          <nav class="header__nav">
+            <h2 class="header__title">menu</h2>
+            <ul class="header__nav__list">
+              <li class="header__nav__item nav__item">
+                <a class="nav-item-link" href="#">man</a>
+                <ul class="nav__item__sub-list">
+                  <li class="nav__item__sub-item">
+                    <a class="nav__item__sub-item-link" href="#">Accessories</a>
+                  </li>
+                  <li class="header__nav__sub-list"><a href="#">Bags</a></li>
+                  <li class="header__nav__sub-list"><a href="#">Denim</a></li>
+                  <li class="header__nav__sub-list">
+                    <a href="#">T-Shirts</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">woman</a>
+                <ul>
+                  <li><a href="#">Accessories</a></li>
+                  <li><a href="#">Jackets & Coats</a></li>
+                  <li><a href="#">Polos</a></li>
+                  <li><a href="#">T-Shirts</a></li>
+                  <li><a href="#">Shirts</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">kids</a>
+                <ul>
+                  <li><a href="#">Accessories</a></li>
+                  <li><a href="#">Jackets & Coats</a></li>
+                  <li><a href="#">Polos</a></li>
+                  <li><a href="#">T-Shirts</a></li>
+                  <li><a href="#">Shirts</a></li>
+                  <li><a href="#">Bags</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main__sec">
+      <section class="page__title">
+        <h1 class="title__registration container">Shopping cart</h1>
+      </section>
+      <div class="main container">
+        <div class="cart__items">
+          <button type="submit" class="btn__cart-cart">
+            Clear shopping cart
+          </button>
+          <button type="submit" class="btn__cart-cart">
+            continue shopping
+          </button>
+        </div>
+        <div class="cart__from">
+          <fieldset class="from__quote">
+            <legend>Shipping adress</legend>
+            <input type="text" placeholder="City" />
+            <input type="text" placeholder="State" />
+            <input type="text" placeholder="Postcode / Zip" />
+            <button type="submit">get a qoute</button>
+          </fieldset>
+          <div class="cart__info-cart">
+            <p>sub total:</p>
+            <p>Grand total:</p>
+            <hr />
+            <button type="submit">proceed to checkout</button>
+          </div>
+        </div>
+      </div>
+      <section class="subscribe">
+        <div class="subscribe__form_wrap container">
+          <ul class="subscribe__form">
+            <li class="subscribe__form-item">
+              <img
+                class="subscribe__form-pic"
+                src="img/intersect.png"
+                alt="#"
+                width="100px"
+                height="100px"
+              />
+              <p class="subscribe__form-text">
+                “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                pulvinar purus condimentum“
+              </p>
+            </li>
+            <li class="subscribe__form-item">
+              <h5 class="subscribe__title">SUBSCRIBE</h5>
+              <p class="subscribe__sub-text">For our newletter and promotion</p>
+              <form class="subscribe__form-form" action="#">
+                <input
+                  class="subscribe__form-input"
+                  placeholder="Enter Your Email"
+                  type="text"
+                />
+                <button class="subscribe__form-btn" type="button">
+                  Subscribe
+                </button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer container">
+        <p class="footer__copyright">© 2021 Brand All Rights Reserved.</p>
+        <ul class="footer__list__social">
+          <li>
+            <a href="#">
+              <div class="a-wrapp">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="a-wrapp">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="a-wrapp">
+                <i class="fab fa-pinterest-p"></i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="a-wrapp">
+                <i class="fab fa-twitter"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

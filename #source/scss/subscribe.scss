@@ -1,0 +1,84 @@
+.subscribe {
+  background-image: url(/img/sub_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .subscribe__form_wrap {
+    &.container {
+      @include container();
+      .subscribe__form {
+        display: flex;
+        justify-content: space-between;
+        .subscribe__form-item {
+          padding: 100px;
+          .item-wrapp {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          .subscribe__form-pic {
+            margin-bottom: 20px;
+          }
+          .subscribe__form-text {
+            font-family: "Lato";
+            font-style: italic;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            width: 360px;
+          }
+          .subscribe__title {
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 35px;
+          }
+          .subscribe__sub-text {
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            margin-top: 10px;
+            text-align: center;
+          }
+          .subscribe__form-form {
+            display: flex;
+            margin-top: 30px;
+            .subscribe__form-input {
+              background: #e1e1e1;
+              border: none;
+              outline: none;
+              padding: 15px 65px 15px 22px;
+              border-radius: 23px 0 0 23px;
+              float: left;
+            }
+            .subscribe__form-btn {
+              border: none;
+              outline: none;
+              color: #fff;
+              background: #222224;
+              width: 100px;
+              font-family: Lato;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 17px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              border-radius: 0 23px 23px 0;
+              &:hover {
+                background-color: #f16d7f;
+                transition: 0.45s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

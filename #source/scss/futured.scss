@@ -1,0 +1,113 @@
+.products {
+    .container {
+        @include container();
+        .products__main-title{
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 36px;
+            text-align: center;
+        }
+        .products__main-sub-title {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: $greytxt;
+            margin-bottom: 54px;
+        }
+        .products__list {
+            font-family: 'Lato';
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .products__list__list-item {
+                width: 360px;
+                &.item_container{
+                    height: 581px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #F8F8F8;
+                    margin-bottom: 30px;
+                    .image__card__wrapp {
+                        position: relative;
+                        .card__img {
+                            &:hover {
+                                background-color: black;
+                            }
+                        }
+                        .overlay {
+                            background: rgba(0, 0, 0, 0.4);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            opacity: 0;
+                            transition: opacity 0.35s;
+                            &:hover {
+                                transition-duration: 0.5s;
+                                opacity: 1;
+                            }
+                            .btn__add-tocart {
+                                position: absolute;
+                                right: 95px;
+                                top: 180px;
+                                padding: 14px 38px;
+                                border: 1px solid #fff;
+                                background-color: transparent;
+                                color: #fff;
+                                font-size: 16px;
+                                outline: none;
+                                transition: 0.35s;
+                                &:hover {
+                                    border: 1px solid #fff;
+                                }
+                            } 
+                        }
+                    }
+                    .products__card-content {
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 18px;
+                        margin-top: 24px;
+                        .products__card__title {
+                            text-transform: uppercase;
+                            font-family: 'Lato';
+                            font-weight: 400;
+                            margin-bottom: 14px;
+                        }
+                        .products__card__text-content{
+                            color: $greytxt;
+                        }
+                        .products__card-price {
+                            margin-top: 18px;
+                            color: $pinktxt;
+                        }
+                    }
+                }
+            }
+        }
+        .btn__wrap {
+            margin-top: 18px;
+            text-align: center;
+            .all__product-btn {
+                padding: 14px 38px;
+                border: 1px solid #FF6A6A;
+                background-color: transparent;
+                color: $pinktxt;
+                font-size: 16px;
+                margin-bottom: 95px;
+                outline: none;
+                &:hover {
+                    transition-duration: 0.4s;
+                    background-color: #FF6A6A;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
