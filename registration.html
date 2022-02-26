@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/registration.css" />
     <title>Registration</title>
   </head>
   <body>
@@ -113,42 +114,72 @@
         <section class="main__registration">
           <fieldset class="main__up__form">
             <legend class="main__legend">Your name</legend>
-            <form action="#">
-              <input class="main__input" type="text" placeholder="First Name" />
-              <input class="main__input" type="text" placeholder="Last Name" />
-              <div class="radio">
-                <p><input class="radio-btn" type="radio" name="btn" />Male</p>
-                <p><input class="radio-btn" type="radio" name="btn" />Female</p>
+            <form class="main__form" action="#">
+              <input
+                class="main__form-input"
+                type="text"
+                placeholder="First Name"
+              />
+              <input
+                class="main__form-input"
+                type="text"
+                placeholder="Last Name"
+              />
+              <div class="main__radio">
+                <div class="main__radio-item">
+                  <input
+                    class="main__radio-btn"
+                    type="radio"
+                    name="gender"
+                    id="btn-male"
+                    value="male"
+                  />
+                  <label for="btn-male">Male</label>
+                </div>
+                <div class="main__radio-item">
+                  <input
+                    class="main__radio-btn"
+                    type="radio"
+                    name="gender"
+                    id="btn-female"
+                    value="female"
+                  />
+                  <label for="btn-female">Female</label>
+                </div>
               </div>
             </form>
           </fieldset>
-          <fieldset class="main__down__form">
+          <fieldset class="main__up__form">
             <legend class="main__legend">Login details</legend>
-            <input class="main__input" type="email" placeholder="Email" />
-            <input class="main__input" type="password" placeholder="Password" />
-            <p class="main__sub-btn-text">
+            <input class="main__form-input" type="email" placeholder="Email" />
+            <input
+              class="main__form-input"
+              type="password"
+              placeholder="Password"
+            />
+            <p class="main__sub-input-text">
               Please use 8 or more characters, with at least 1 number and a
               mixture of uppercase and lowercase letters
             </p>
           </fieldset>
-          <button class="jn-btn">
-            join now <span class="arrow-right">&#8594;</span>
+          <button class="main__join-btn">
+            <span class="main__join-btn-content">Join now &#8594;</span>
           </button>
         </section>
         <section class="main__text-content">
-          <h2 class="main__loyalty-title">loyalty has its perks</h2>
-          <p class="loyalty-subtitle">
+          <h2 class="main__text-title">loyalty has its perks</h2>
+          <p class="main__text-subtitle">
             Get in on the loyalty program where you can earn points and unlock
             serious perks. Starting with these as soon as you join:
           </p>
-          <ul class="loyalty__list">
-            <li class="list__item">15% off welcome offer</li>
-            <li class="list__item">
+          <ul class="main__list">
+            <li class="main__list-item">15% off welcome offer</li>
+            <li class="main__list-item">
               Free shipping, returns and exchanges on all orders
             </li>
-            <li class="list__item">$10 off a purchase on your birthday</li>
-            <li class="list__item">Early access to products</li>
-            <li class="list__item">Exclusive offers & rewards</li>
+            <li class="main__list-item">$10 off a purchase on your birthday</li>
+            <li class="main__list-item">Early access to products</li>
+            <li class="main__list-item">Exclusive offers & rewards</li>
           </ul>
         </section>
       </div>
@@ -194,7 +225,7 @@
     </main>
     <footer>
       <section class="footer container">
-        <p class="footer__copyright">© 2021 Brand All Rights Reserved.</p>
+        <p class="footer__copyright">© 2022 Brand All Rights Reserved.</p>
         <ul class="footer__list__social">
           <li>
             <a href="#">
